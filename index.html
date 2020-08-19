@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Birthday Cal</title>
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-title">
+        <h1>Birthday cal</h1>
+      </div>
+      <div class="calendar-wrapper">
+        <div class="calendar-container">
+          <ul class="calendar-days">
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">MON</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">TUE</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">WED</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">THU</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">FRI</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">SAT</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+            <li class="day">
+              <div class="day-header">
+                <span class="day-header-title">SUN</span>
+              </div>
+              <div class="day-content">
+                <ul class="user-list"></ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form
+        name="birthdayCalForm"
+        action="#"
+        onsubmit="onSubmitFormData();return false"
+      >
+        <div class="input-wrapper">
+          <div class="input-textarea">
+            <div class="textarea-label">
+              <label for="json"
+                >Please enter a json array with properties "name" and
+                "birthday(mm/dd/yyyy)"</label
+              >
+            </div>
+            <div class="textarea-field">
+              <textarea
+                name="json"
+                id="json"
+                cols="60"
+                rows="12"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="input-date">
+            <div class="date-label">
+              <label for="year">Year(YYYY)</label>
+            </div>
+            <div class="date-field">
+              <input
+                type="number"
+                name="year"
+                id="year"
+                maxlength="4"
+                min="1000"
+                max="9999"
+                required
+              />
+            </div>
+            <div class="submit-btn">
+              <button type="submit">
+                UPDATE
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
